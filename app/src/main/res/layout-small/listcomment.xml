@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:orientation="horizontal"
+        android:background="#303030">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="269dp">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView4"
+                android:layout_gravity="right|center_vertical" />
+
+            <EditText
+                android:layout_width="272dp"
+                android:layout_height="96dp"
+                android:id="@+id/txtC"
+                android:background="@drawable/border"
+                android:editable="false"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_gravity="right|top"
+                android:layout_marginLeft="95dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="inherit"
+                android:gravity="top"
+                android:paddingTop="5dp" />
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:id="@+id/imageView3"
+                android:layout_gravity="left|top"
+                android:src="@drawable/utente" />
+
+            <Button
+                android:layout_width="155dp"
+                android:layout_height="61dp"
+                android:text="LIKE"
+                android:id="@+id/btnLike"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/buttonshape"
+                android:layout_gravity="left|center_vertical" />
+
+            <Button
+                android:layout_width="155dp"
+                android:layout_height="61dp"
+                android:text="DON&apos;T LIKE"
+                android:id="@+id/btnDon"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/buttonshape"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

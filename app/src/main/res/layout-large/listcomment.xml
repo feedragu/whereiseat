@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.05">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="269dp">
+
+            <TextView
+                android:layout_width="264dp"
+                android:layout_height="149dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/txtC"
+                android:background="@drawable/border"
+                android:editable="false"
+                android:textColor="#000000" />
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView4"
+                android:layout_gravity="right|center_vertical" />
+
+            <RatingBar
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar"
+                android:layout_gravity="left|bottom"
+                android:layout_marginBottom="20dp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:text="LIKE"
+                android:id="@+id/btnLike"
+                android:layout_marginTop="15dp"
+                android:layout_weight="0.30" />
+
+            <Button
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:text="DON&apos;T LIKE"
+                android:id="@+id/btnDon"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

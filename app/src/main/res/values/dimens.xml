@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- screen size dimens -->
+    <dimen name="splash_size">250dp</dimen>
+    <dimen name="map_fragment">210dp</dimen>
+    <dimen name="street_fragment">365dp</dimen>
+    <dimen name="map_fragment_tablet">420dp</dimen>
+    <dimen name="street_fragment_tablet">730dp</dimen>
+
+</resources>

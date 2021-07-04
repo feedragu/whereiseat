@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_prova"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_prova"
+        app:menu="@menu/activity_main3_drawer">
+
+<!--
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeBar">
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/txtUsername"
+                android:layout_below="@+id/textView5"
+                android:layout_toRightOf="@+id/textView6"
+                android:layout_marginTop="42dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/txtPass"
+                android:layout_below="@+id/textView6"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp" />
+
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="80dp"
+                android:text="Accedi"
+                android:id="@+id/btnAccedi"
+                android:background="#ae2525"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_below="@+id/txtPass"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Accedi con il tuo account"
+                android:id="@+id/textView4"
+                android:layout_marginTop="166dp"
+                android:textSize="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/textView6"
+                android:layout_alignStart="@+id/textView6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Username"
+                android:id="@+id/textView5"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="44dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Password"
+                android:id="@+id/textView6"
+                android:layout_below="@+id/txtUsername"
+                android:layout_toLeftOf="@+id/txtPass"
+                android:layout_toStartOf="@+id/txtPass"
+                android:layout_marginTop="41dp" />
+
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="80dp"
+                android:text="Registrati"
+                android:id="@+id/btnRegistrati"
+                android:background="#ae2525"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_below="@+id/textView7"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="56dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Oppure"
+                android:id="@+id/textView7"
+                android:textSize="30dp"
+                android:layout_marginTop="41dp"
+                android:layout_below="@+id/btnAccedi"
+                android:layout_toLeftOf="@+id/txtPass"
+                android:layout_toStartOf="@+id/txtPass" />
+        </RelativeLayout>
+        -->
+
+
+    </android.support.design.widget.NavigationView>
+
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+
+        <item
+            android:id="@+id/nav_accedi"
+            android:icon="@drawable/user"
+            android:title="Accedi"
+            android:textSize="14dp"/>
+        <item
+            android:id="@+id/nav_reg"
+            android:icon="@drawable/user"
+            android:title="Registrati"
+            android:textSize="14sp"/>
+        <item
+            android:id="@+id/nav_sett"
+            android:icon="@drawable/ic_setting_light"
+            android:title="Impostazioni"
+            android:textSize="14sp"/>
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools"
+            android:textSize="14sp"/>
+    </group>
+
+
+</menu>

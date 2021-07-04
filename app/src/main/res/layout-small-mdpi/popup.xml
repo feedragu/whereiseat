@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="250dp">
+
+    <ImageView
+        android:layout_width="119dp"
+        android:layout_height="104dp"
+        android:id="@+id/image"
+        android:layout_gravity="left|top" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="135dp"
+        android:layout_height="111dp"
+        android:layout_gravity="right|top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/txtNome"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/txtAddress"
+            android:layout_marginTop="15dp"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/txtApert"
+            android:textSize="18dp"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="52dp"
+        android:text="Portami la"
+        android:id="@+id/drawPath"
+        android:layout_gravity="left|bottom"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A82808"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5" />
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="52dp"
+        android:text="Aggiungi ai preferiti"
+        android:textColor="#FFFFFF"
+        android:id="@+id/btnFav"
+        android:layout_gravity="right|bottom"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A82808"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_marginLeft="15dp" />
+
+</FrameLayout>

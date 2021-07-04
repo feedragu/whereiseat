@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/common_plus_signin_btn_text_dark_pressed">
+
+    <ImageView
+        android:layout_width="254dp"
+        android:layout_height="254dp"
+        android:id="@+id/imageView2"
+        android:layout_gravity="center"
+        android:src="@drawable/start_image" />
+</FrameLayout>

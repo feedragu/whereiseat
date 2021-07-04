@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/relativeD"
+    tools:context=".ActivityResources.DetailsComment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="#b5cc0e00" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeC">
+
+        <include layout="@layout/content_details_comment" />
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal|left|top"
+            android:id="@+id/relative"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <fragment
+                android:name="com.ancora.gmaps2.federico.googlemapsactivity.ActivityResources.CommentFragment"
+                android:id="@+id/fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="false" />
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Fine"
+        android:id="@+id/txtEnd"
+        android:layout_above="@+id/relativeC"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <!-- <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_gravity="center_horizontal|bottom"
+         android:id="@+id/relativeC"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true"
+         android:layout_below="@+id/toolbar">
+         <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:paddingBottom="10dp"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+             android:paddingTop="10dp"
+             app:layout_behavior="@string/appbar_scrolling_view_behavior"
+             tools:context="com.ancora.gmaps2.federico.googlemapsactivity.ActivityResources.DetailsComment"
+             tools:showIn="@layout/activity_details_comment"
+             android:id="@+id/comment_layout"
+             android:focusable="true"
+             android:focusableInTouchMode="true"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true">
+
+
+             <ImageView
+                 android:layout_width="426dp"
+                 android:layout_height="334dp"
+                 android:id="@+id/imageIm"
+                 android:layout_gravity="left|top" />
+
+             <Button
+                 android:layout_width="199dp"
+                 android:layout_height="85dp"
+                 android:text="Visualizza Commenti"
+                 android:id="@+id/btnPad"
+                 android:onClick="moveFrag"
+                 android:layout_gravity="right|top"
+                 android:background="@drawable/buttonshape" />
+
+
+             <LinearLayout
+                 android:orientation="vertical"
+                 android:layout_width="371dp"
+                 android:layout_height="151dp"
+                 android:layout_gravity="center_vertical|left"
+                 android:layout_marginBottom="80dp">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textAppearance="?android:attr/textAppearanceLarge"
+                     android:id="@+id/txtName"
+                     android:layout_gravity="left|center_vertical"
+                     android:layout_marginLeft="10dp"
+                     android:foregroundGravity="left"
+                     android:gravity="left"
+                     android:textSize="22dp" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textAppearance="?android:attr/textAppearanceLarge"
+                     android:id="@+id/txtAddr"
+                     android:layout_gravity="left|center_vertical"
+                     android:layout_marginLeft="10dp"
+                     android:foregroundGravity="left"
+                     android:gravity="left"
+                     android:textSize="22dp" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textAppearance="?android:attr/textAppearanceLarge"
+                     android:id="@+id/txtPlace"
+                     android:layout_gravity="center_vertical|left"
+                     android:layout_marginLeft="10dp"
+                     android:foregroundGravity="left"
+                     android:gravity="left"
+                     android:textSize="22dp" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:orientation="vertical"
+                 android:layout_width="570dp"
+                 android:layout_height="397dp"
+                 android:layout_gravity="left|bottom"
+                 android:layout_marginBottom="140dp">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textAppearance="?android:attr/textAppearanceLarge"
+                     android:text="OPENING AND CLOSING HOURS"
+                     android:id="@+id/textView2"
+                     android:textStyle="bold"
+                     android:textSize="25dp" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textAppearance="?android:attr/textAppearanceLarge"
+                     android:id="@+id/txtM"
+                     android:textSize="22dp"
+                     android:layout_marginTop="20dp" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textAppearance="?android:attr/textAppearanceLarge"
+                     android:id="@+id/txtTu"
+                     android:textSize="22dp" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textAppearance="?android:attr/textAppearanceLarge"
+                     android:id="@+id/txtW"
+                     android:textSize="22dp" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textAppearance="?android:attr/textAppearanceLarge"
+                     android:id="@+id/txtTh"
+                     android:textSize="22dp" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textAppearance="?android:attr/textAppearanceLarge"
+                     android:id="@+id/txtF"
+                     android:textSize="22dp" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textAppearance="?android:attr/textAppearanceLarge"
+                     android:id="@+id/txtS"
+                     android:textSize="22dp" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textAppearance="?android:attr/textAppearanceLarge"
+                     android:id="@+id/txtSu"
+                     android:textSize="22dp" />
+             </LinearLayout>
+
+             <Button
+                 android:layout_width="199dp"
+                 android:layout_height="85dp"
+                 android:text="Vota questo ristorante"
+                 android:id="@+id/btnRate"
+                 android:onClick="moveFrag"
+                 android:layout_gravity="right|top"
+                 android:background="@drawable/buttonshape"
+                 android:layout_marginTop="150dp" />
+
+             <RatingBar
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/rBar"
+                 android:layout_gravity="right|top"
+                 android:numStars="5"
+                 android:visibility="visible"
+                 android:layout_marginTop="300dp" />
+
+
+         </FrameLayout>
+         -->
+
+
+    </RelativeLayout>
